@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int firstOccurence(int arr[], int low, int high, int x) {
+int lastOccurence(int arr[], int low, int high, int x) {
     int n = high;
     while(low <= high) {
         // finding mid index
@@ -38,7 +38,7 @@ int main() {
     int size = sizeof(arr)/sizeof(arr[0]);
     int low = 0,  high = size-1;
 
-    int idx = firstOccurence(arr, low, high, 60);
+    int idx = lastOccurence(arr, low, high, 60);
 
     cout << idx;
 }
